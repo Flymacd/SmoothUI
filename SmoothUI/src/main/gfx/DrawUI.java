@@ -21,6 +21,8 @@ public class DrawUI {
 			g.setColor(b.getDefC());
 		}
 		
+		g.drawRect((int) b.getRx(), (int) b.getRy(), (int) b.getRw(), (int) b.getRh());
+		
 		if (!b.getString().trim().equalsIgnoreCase("")) {
 			drawCenteredString(b, g);
 		}
@@ -35,8 +37,6 @@ public class DrawUI {
 			}
 			g.fillRect((int) b.getRx(), (int) b.getRy(), (int) b.getRw(), (int) b.getRh());
 		}
-		
-		g.drawRect((int) b.getRx(), (int) b.getRy(), (int) b.getRw(), (int) b.getRh());
 		
 	}
 	
